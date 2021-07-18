@@ -143,6 +143,9 @@ a {
   list-style: none;
   padding-left: 0;
 }
+.list > li {
+  margin-bottom: 1.5rem;
+}
 
 .list--inline .list__item {
   display: inline-block;
@@ -208,7 +211,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -301,6 +304,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -444,6 +448,9 @@ a {
   color: var(--color-body-darker);
   line-height: 1.3;
 }
+.quote__text {
+  font-size: 2.5rem;
+}
 
 .quote__text::before {
   content: open-quote;
@@ -536,7 +543,11 @@ a {
 /* Callout */
 .callout {
   padding: 4rem;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 85%;
+  margin: auto;
+  position: relative;
+  top: 100px;
 }
 
 .callout--primary {
@@ -744,8 +755,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -833,6 +845,10 @@ a {
 .footer__section {
   padding: 2rem;
   border-bottom: 1px solid #393939;
+}
+
+.footer__sections {
+  margin-top: 8rem;
 }
 
 .footer__section .list {
